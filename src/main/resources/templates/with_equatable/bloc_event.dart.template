@@ -1,0 +1,5 @@
+import 'package:meta/meta.dart';
+import 'package:base_bloc/base_bloc.dart';
+
+@immutable
+class ${bloc_camel_case}Event extends BaseEvent {}

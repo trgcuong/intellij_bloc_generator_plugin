@@ -1,0 +1,1 @@
+# intellij_bloc_generator_plugin
