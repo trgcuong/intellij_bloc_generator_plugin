@@ -1,9 +1,6 @@
 package com.bloc.intellij_generator_plugin.generator
 
-import com.bloc.intellij_generator_plugin.generator.components.BlocEventGenerator
-import com.bloc.intellij_generator_plugin.generator.components.BlocExportsGenerator
-import com.bloc.intellij_generator_plugin.generator.components.BlocGenerator
-import com.bloc.intellij_generator_plugin.generator.components.BlocStateGenerator
+import com.bloc.intellij_generator_plugin.generator.components.*
 
 object BlocGeneratorFactory {
 
@@ -12,6 +9,7 @@ object BlocGeneratorFactory {
         val bloc = BlocGenerator(blocName)
         val event = BlocEventGenerator(blocName)
         val state = BlocStateGenerator(blocName)
-        return listOf(exports, bloc, event, state)
+        val widget = BlocWidgetGenerator(blocName)
+        return listOf(exports, bloc, event, state, widget)
     }
 }

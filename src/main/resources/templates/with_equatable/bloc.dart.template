@@ -7,7 +7,7 @@ class ${bloc_camel_case}Bloc extends BaseBloc<${bloc_camel_case}Event, ${bloc_ca
   ${bloc_camel_case}State get initialState => ${bloc_camel_case}State();
 
   @override
-  Stream<${bloc_camel_case}State> mapEventToState(
+  Stream<${bloc_camel_case}State> mapEventToState(${bloc_camel_case}State currentState,
     ${bloc_camel_case}Event event,
   ) async* {
     // TODO: Add Logic

@@ -1,0 +1,28 @@
+import 'package:base_bloc/base_bloc.dart';
+import 'package:flutter/material.dart';
+
+class ${bloc_camel_case}Widget extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() {
+    return ${bloc_camel_case}State();
+  }
+}
+
+class ${bloc_camel_case}WidgetState extends BaseBlocState<${bloc_camel_case}Widget> {
+
+  @override
+  Widget build(BuildContext context) {
+    return _buildBody;
+  }
+
+  @override
+  BaseBloc createBloc() {
+    return ${bloc_camel_case}Bloc();
+  }
+  Widget _buildBody(BuildContext context, ${bloc_camel_case}State state) {
+
+    return //todo return a widget;
+  }
+
+}
+
