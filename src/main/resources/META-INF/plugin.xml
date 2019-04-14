@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.github.trgcuong.bloc_generator_plugin</id>
     <name>Bloc Template Generator</name>
-    <vendor email="trgcuong@gmail.com">Bloc</vendor>
+    <vendor email="trgcuong@gmail.com">Base Bloc</vendor>
 
     <description>
         <![CDATA[
