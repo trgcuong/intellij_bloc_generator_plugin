@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+import 'package:base_bloc/base_bloc.dart';
 import 'package:meta/meta.dart';
 
 @immutable
@@ -6,10 +6,10 @@ class ${bloc_camel_case}State extends BaseState {
     final error;
     final bool isLoading;
 
-    ${bloc_camel_case}State(this.isLoading = false, this.error}):super([loginStatus,isLoading,error]);
+    ${bloc_camel_case}State({this.isLoading = false, this.error}):super([isLoading, error]);
 
-    LoginState copyWith({bool isLoading, var error}) {
-        return LoginState(
+    ${bloc_camel_case}State copyWith({bool isLoading, var error}) {
+        return ${bloc_camel_case}State(
           isLoading: isLoading ?? this.isLoading,
           error: error ?? this.error,
         );

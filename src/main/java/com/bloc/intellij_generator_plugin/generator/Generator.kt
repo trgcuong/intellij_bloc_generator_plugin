@@ -21,8 +21,7 @@ abstract class Generator(private val blocName: String,
             TEMPLATE_BLOC_SNAKE_CASE to snakeCase()
         )
         try {
-            val templateFolder = "with_equatable"
-            val resource = "/templates/$templateFolder/$templateName.dart.template"
+            val resource = "/templates/$templateName.dart.template"
             val resourceAsStream = Generator::class.java.getResourceAsStream(resource)
             templateString = CharStreams.toString(InputStreamReader(resourceAsStream, Charsets.UTF_8))
         } catch (e: Exception) {

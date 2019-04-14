@@ -2,13 +2,13 @@ import 'dart:async';
 import 'package:base_bloc/base_bloc.dart';
 import './bloc.dart';
 
-class ${bloc_camel_case}Bloc extends BaseBloc<${bloc_camel_case}Event, ${bloc_camel_case}State> {
+class ${bloc_camel_case}Bloc extends BaseBloc<${bloc_camel_case}State> {
   @override
   ${bloc_camel_case}State get initialState => ${bloc_camel_case}State();
 
   @override
   Stream<${bloc_camel_case}State> mapEventToState(${bloc_camel_case}State currentState,
-    ${bloc_camel_case}Event event,
+    BaseEvent event,
   ) async* {
     // TODO: Add Logic
   }

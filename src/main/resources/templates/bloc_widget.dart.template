@@ -1,10 +1,11 @@
 import 'package:base_bloc/base_bloc.dart';
 import 'package:flutter/material.dart';
+import 'bloc.dart';
 
 class ${bloc_camel_case}Widget extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
-    return ${bloc_camel_case}State();
+    return ${bloc_camel_case}WidgetState();
   }
 }
 
@@ -12,7 +13,7 @@ class ${bloc_camel_case}WidgetState extends BaseBlocState<${bloc_camel_case}Widg
 
   @override
   Widget build(BuildContext context) {
-    return _buildBody;
+    return BaseBlocBuilder<${bloc_camel_case}State>(bloc, _buildBody);
   }
 
   @override
