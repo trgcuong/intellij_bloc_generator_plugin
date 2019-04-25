@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.github.trgcuong'
-version '0.1'
+version '0.2'
 
 sourceCompatibility = 1.8
 
@@ -18,7 +18,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 intellij {
-    version '2018.2.6'
+    version '2018.3.4'
     alternativeIdePath '/Applications/Android Studio.app'
 }
 compileKotlin {
